@@ -2,7 +2,7 @@
 title: "CircleCI"
 ---
 
-Building, testing, and deploying your Jekyll generated website can quickly be done with [CircleCI][0]. [GitHub][1] and [Bitbucket][2] are supported and you can get started with an open-source or private repository for free.
+Building, testing, and deploying your Jekyll-generated website can quickly be done with [CircleCI][0], a continuous integration & delivery tool. CircleCI supports [GitHub][1] and [Bitbucket][2], and you can get started for free using an open-source or private repository.
 
 [0]: https://circleci.com/
 [1]: https://github.com/
@@ -12,7 +12,7 @@ Building, testing, and deploying your Jekyll generated website can quickly be do
 
 To start building your project on CircleCI, all you need to do is 'follow' your project from CircleCI's website:
 
-1. Visit the 'Add Projects' page: <https://circleci.com/add-projects>.
+1. Visit the 'Add Projects' page: <https://circleci.com/add-projects>
 1. From the GitHub or Bitbucket tab on the left, choose a user or organization.
 1. Find your project in the list and click 'Build project' on the right.
 1. The first build will start on its own. You can start telling CircleCI how to build your project by creating a [circle.yml][3] file in the root of your repository.
@@ -21,7 +21,7 @@ To start building your project on CircleCI, all you need to do is 'follow' your 
 
 ## Dependencies
 
-The easiest way to manage dependencies for a Jekyll project (with or without CircleCI) is via a [Gemfile][4]. You'd want to have Jekyll, any Jekyll plugins, [HTML Proofer](#html-proofer), and any other gems that you are using in here. Don't forget to version `Gemfile.lock` as well. Here's an example `Gemfile`:
+The easiest way to manage dependencies for a Jekyll project (with or without CircleCI) is via a [Gemfile][4]. You'd want to have Jekyll, any Jekyll plugins, [HTML Proofer](#html-proofer), and any other gems that you are using in the `Gemfile`. Don't forget to version `Gemfile.lock` as well. Here's an example `Gemfile`:
 
 [4]: http://bundler.io/gemfile.html
 
@@ -48,7 +48,7 @@ dependencies:
 
 ### HTML Proofer
 
-With your site built, it's useful to run test to check for valid HTML, broken links, etc. There's a few tools out there but [HTML Proofer][5] is popular amongst Jekyll users. We'll run it in the `test` phase with a few preferred flags. Check out the `html-proofer` [README][6] for all available flags, or run `htmlproofer --help` locally.
+With your site built, it's useful to run tests to check for valid HTML, broken links, etc. There's a few tools out there but [HTML Proofer][5] is popular amongst Jekyll users. We'll run it in the `test` phase with a few preferred flags. Check out the `html-proofer` [README][6] for all available flags, or run `htmlproofer --help` locally.
 
 [5]: https://github.com/gjtorikian/html-proofer
 [6]: https://github.com/gjtorikian/html-proofer/blob/master/README.md#configuration

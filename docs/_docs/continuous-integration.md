@@ -2,7 +2,7 @@
 title: Continuous Integration
 ---
 
-Continuous Integration (CI), and related concepts, enables you to publish your Jekyll generated website with confidence by automating the quality assurance (QA) and deployment processes. You can quickly get started using CI with one of the providers below:
+Continuous Integration (CI) enables you to publish your Jekyll generated website with confidence by automating the quality assurance and deployment processes. You can quickly get started using CI with one of the providers below:
 
 <div style="display:flex;flex-wrap:wrap;">
 	<div style="width:49%;text-align:center;">
